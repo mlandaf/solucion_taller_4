@@ -8,9 +8,7 @@
 
 ## Descripción
 
-Este repositorio contiene la **solución completa** del Taller 4 del curso, centrado en el diseño e implementación de la tarea Go/No-Go en PsychoPy Builder.
-
-La tarea Go/No-Go es un paradigma de control inhibitorio en el que el participante debe responder ante un estímulo frecuente (Go) e inhibir su respuesta ante un estímulo infrecuente (No-Go). La alta proporción de trials Go genera una tendencia prepotente a responder, lo que hace que la inhibición en los trials No-Go sea cognitivamente demandante. Wessel (2018) es la referencia metodológica utilizada en el taller.
+Este repositorio contiene la **solución completa** del Taller 4 del curso, centrado en el diseño e implementación de la tarea Go/No-Go en PsychoPy Builder. La tarea Go/No-Go es un paradigma de control inhibitorio en el que el participante debe responder ante un estímulo frecuente (Go) e inhibir su respuesta ante un estímulo infrecuente (No-Go). La alta proporción de trials Go genera una tendencia prepotente a responder, lo que hace que la inhibición en los trials No-Go sea cognitivamente demandante. Wessel (2018) es la referencia metodológica utilizada en el taller.
 
 > **Nota:** Este repositorio se publica al finalizar el taller como material de referencia.
 
@@ -40,7 +38,7 @@ solucion_taller_4/
 │
 ├── media/
 │   ├── instructions/
-│   │   ├── 01_instrucciones_generales.png
+│   │   ├── 01_instrucciones.png
 │   │   ├── 02_instrucciones_practica.png
 │   │   ├── 03_fin_practica.png
 │   │   ├── 04_descanso.png
@@ -73,22 +71,40 @@ solucion_taller_4/
 | Trials experimentales | 80 (64 Go + 16 No-Go) sin feedback |
 | Duración del estímulo | Hasta 1000 ms o hasta respuesta |
 | Duración del trial (ITI incluido) | 1500 ms |
-| Variables dependientes | RT en Go (ms), errores de comisión (%), errores de omisión (%) |
+| Variables de la tarea | RT en Go (ms), errores de comisión (%), errores de omisión (%) |
 
 ### Flujo de la tarea
 
-```
-instrucciones_generales
+```mermaid
+flowchart TB
+ subgraph LP["loop_practica  (20 trials, aleatorio)"]
+        P2["feedback"]
+        P1["estimulo"]
+  end
+ subgraph LE["loop_experimental  (80 trials, aleatorio)"]
+        E1["estimulo"]
+  end
+    A["instrucciones_generales"] --> B["instrucciones_practica"]
+    B --> LP
+    P1 --> P2
+    LP --> C["fin_practica"]
+    C --> D["descanso 10 s"]
+    D --> E["instrucciones_experimental"]
+    E --> LE
+    LE --> F["fin_experimento"]
+    ```@{ label: "```" }
 
-instrucciones_practica
-  → [loop_practica: estimulo + feedback]  (20 trials)
-
-fin_practica → descanso (10 s)
-
-instrucciones_experimental
-  → [loop_experimental: estimulo]  (80 trials)
-
-fin_experimento
+    style P2 fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style P1 fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style E1 fill:#5DCAA5,stroke:#0F6E56,color:#04342C
+    style A  fill:#D3D1C7,stroke:#D50000,color:#2C2C2A,fill:#FFCDD2
+    style B  fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style LP fill:#EEEDFE,stroke:#534AB7,color:#26215C
+    style C  fill:#D3D1C7,stroke:#534AB7,color:#2C2C2A,fill:#AFA9EC
+    style D  fill:#FAC775,stroke:#BA7517,color:#412402
+    style E  fill:#5DCAA5,stroke:#0F6E56,color:#04342C
+    style LE fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+    style F  fill:#D3D1C7,stroke:#FFD600,color:#2C2C2A,fill:#FFF9C4
 ```
 
 ---
