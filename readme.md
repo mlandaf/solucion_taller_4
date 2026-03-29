@@ -92,7 +92,6 @@ flowchart TB
     D --> E["instrucciones_experimental"]
     E --> LE
     LE --> F["fin_experimento"]
-    ```@{ label: "```" }
 
     style P2 fill:#AFA9EC,stroke:#534AB7,color:#26215C
     style P1 fill:#AFA9EC,stroke:#534AB7,color:#26215C
