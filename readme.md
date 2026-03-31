@@ -8,7 +8,7 @@
 
 ## Descripción
 
-Este repositorio contiene la **solución completa** del Taller 4 del curso, centrado en el diseño e implementación de la tarea Go/No-Go en PsychoPy Builder. La tarea Go/No-Go es un paradigma de control inhibitorio en el que el participante debe responder ante un estímulo frecuente (Go) e inhibir su respuesta ante un estímulo infrecuente (No-Go). La alta proporción de trials Go genera una tendencia prepotente a responder, lo que hace que la inhibición en los trials No-Go sea cognitivamente demandante. Wessel (2018) es la referencia metodológica utilizada en el taller.
+Este repositorio contiene la **solución completa** del Taller 4 del curso, centrado en el diseño e implementación de la tarea Go/No-Go en PsychoPy Builder. La tarea Go/No-Go es un paradigma de control inhibitorio en el que el participante debe responder ante un estímulo frecuente (Go) e inhibir su respuesta ante un estímulo infrecuente (No-Go). La alta proporción de trials Go genera una tendencia prepotente a responder, lo que hace que la inhibición en los trials No-Go sea cognitivamente demandante. El control inhibitorio es una de las tres funciones ejecutivas centrales revisadas por Diamond (2013), y constituye la función directamente medida por este paradigma. Wessel (2018) es la referencia metodológica utilizada en el taller.
 
 > **Nota:** Este repositorio se publica al finalizar el taller como material de referencia.
 
@@ -139,8 +139,9 @@ No se requiere instalar ningún software adicional. Solo arrastra tu archivo CSV
 
 ## Referencias
 
-Wessel, J. R. (2018). Prepotent motor activity and inhibitory control demands in different variants of the go/no-go paradigm. *Psychophysiology, 55*(3), e12871. https://doi.org/10.1111/psyp.12871
+Diamond, A. (2013). Executive functions. *Annual Review of Psychology, 64*, 135–168. https://doi.org/10.1146/annurev-psych-113011-143750
 
+Wessel, J. R. (2018). Prepotent motor activity and inhibitory control demands in different variants of the go/no-go paradigm. *Psychophysiology, 55*(3), e12871. https://doi.org/10.1111/psyp.12871
 
 Peirce, J. W., Gray, J. R., Simpson, S., MacAskill, M. R., Hochenberger, R., Sogo, H., Kastman, E., & Lindelov, J. (2019). PsychoPy2: Experiments in behavior made easy. *Behavior Research Methods*. https://doi.org/10.3758/s13428-018-01193-y
 
