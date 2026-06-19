@@ -80,24 +80,28 @@ flowchart TD
     subgraph SB[BIENVENIDA]
         A[instrucciones_generales]
     end
+
     subgraph SP[PRÁCTICA]
         B[instrucciones_practica]
         B --> LP
         subgraph LP["loop_practica x 20"]
-            P1[estimulo] --> P2[feedback]
+            P1[estimulo] --> PITI[ITI] --> P2[feedback]
         end
         LP --> C[fin_practica]
     end
+
     subgraph SD[DESCANSO]
         D[descanso 10 s]
     end
+
     subgraph SE[EXPERIMENTAL]
         E[instrucciones_experimental]
         E --> LE
         subgraph LE["loop_experimental x 80"]
-            E1[estimulo]
+            E1[estimulo] --> EITI[ITI]
         end
     end
+
     subgraph SC[CIERRE]
         F[fin_experimento]
     end
@@ -110,14 +114,19 @@ flowchart TD
     style A    fill:#6BA3D6,stroke:#2E6DA4,color:#0D2E4A
     style F    fill:#E07B6A,stroke:#A83D2B,color:#3D0E07
     style D    fill:#FAC775,stroke:#BA7517,color:#412402
+
     style B    fill:#AFA9EC,stroke:#534AB7,color:#26215C
     style C    fill:#AFA9EC,stroke:#534AB7,color:#26215C
     style P1   fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style PITI fill:#D8D5FA,stroke:#534AB7,color:#26215C
     style P2   fill:#AFA9EC,stroke:#534AB7,color:#26215C
     style LP   fill:#EEEDFE,stroke:#534AB7,color:#26215C
+
     style E    fill:#5DCAA5,stroke:#0F6E56,color:#04342C
     style E1   fill:#5DCAA5,stroke:#0F6E56,color:#04342C
+    style EITI fill:#C9EFE3,stroke:#0F6E56,color:#04342C
     style LE   fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+
     style SB   fill:#EBF3FA,stroke:#2E6DA4,color:#0D2E4A
     style SP   fill:#F8F7FF,stroke:#534AB7,color:#26215C
     style SD   fill:#FEF9EE,stroke:#BA7517,color:#412402
