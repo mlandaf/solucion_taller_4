@@ -12,6 +12,12 @@ Este repositorio contiene la **solución completa** del Taller 4 del curso, cent
 
 > **Nota:** Este repositorio se publica al finalizar el taller como material de referencia.
 
+### Actualización para la clase
+
+Se incluyó una modificación del experimento con **bucle anidado** a manera de repaso para el examen. Esta versión permite revisar el uso de un bucle externo de bloques y un bucle interno de condiciones/trials dentro de PsychoPy Builder.
+
+Además, se agregó un caso redactado tipo simulación en el archivo `SOLUCION_GO_NO_GO_TASK.pdf`, ya solucionado e incluido con capturas de pantalla del proceso. Para esta modificación se añadieron los estímulos `O.png` y `Q.png` en formato PNG, junto con dos archivos nuevos en `conditions/`: `bloques.xlsx` para el bucle externo y `condiciones_experimental_2.xlsx` como hoja de condiciones para los estímulos O y Q.
+
 ---
 
 ## Cómo descargar los materiales
@@ -31,22 +37,27 @@ Este repositorio contiene la **solución completa** del Taller 4 del curso, cent
 solucion_taller_4/
 │
 ├── gonogo_task.psyexp                  # Archivo del experimento completo
+├── SOLUCION_GO_NO_GO_TASK.pdf          # Caso tipo simulación resuelto con capturas
 │
 ├── conditions/
-│   ├── practica.xlsx                  # 20 trials — 16 Go (80%) + 4 No-Go (20%)
-│   └── experimental.xlsx             # 80 trials — 64 Go (80%) + 16 No-Go (20%)
+│   ├── bloques.xlsx                    # Archivo para el bucle externo del repaso
+│   ├── condiciones_practica.xlsx       # Trials de práctica
+│   ├── condiciones_experimental.xlsx   # Condiciones experimentales originales
+│   └── condiciones_experimental_2.xlsx # Condiciones para estímulos O y Q
 │
 ├── media/
 │   ├── instructions/
-│   │   ├── 01_instrucciones.png
-│   │   ├── 02_instrucciones_practica.png
-│   │   ├── 03_fin_practica.png
-│   │   ├── 04_descanso.png
-│   │   ├── 05_instrucciones_experimental.png
-│   │   └── 06_fin_experimento.png
+│   │   ├── 1_instrucciones.png
+│   │   ├── 2_instrucciones_practica.png
+│   │   ├── 3_fin_practica.png
+│   │   ├── 4_descanso.png
+│   │   ├── 5_instrucciones_experimental.png
+│   │   └── 6_fin_experimento.png
 │   └── stim/
 │       ├── go.png                     # Círculo verde (#27AE60) — 500×500 px
-│       └── nogo.png                   # Cuadrado rojo (#C0392B) — 500×500 px
+│       ├── nogo.png                   # Cuadrado rojo (#C0392B) — 500×500 px
+│       ├── O.png                      # Estímulo agregado para bucle anidado
+│       └── Q.png                      # Estímulo agregado para bucle anidado
 │
 ├── docs/
 │   ├── instrucciones_gonogo.docx      # Instrucciones por pantalla con notas técnicas
@@ -65,10 +76,12 @@ solucion_taller_4/
 | Versión | Versión 4 de Wessel (2018): rare No-Go + ritmo rápido |
 | Estímulo Go | Círculo verde (#27AE60) — 500×500 px, fondo negro |
 | Estímulo No-Go | Cuadrado rojo (#C0392B) — 500×500 px, fondo negro |
+| Estímulos agregados para repaso | `O.png` y `Q.png`, usados en la modificación con bucle anidado |
 | Tecla de respuesta (Go) | Barra espaciadora (solo en trials Go) |
 | Proporción | 80% Go / 20% No-Go |
 | Trials de práctica | 20 (16 Go + 4 No-Go) con feedback |
 | Trials experimentales | 80 (64 Go + 16 No-Go) sin feedback |
+| Bucle anidado de repaso | Bucle externo controlado por `bloques.xlsx` y bucle interno controlado por las hojas de condiciones |
 | Duración del estímulo | Hasta 1000 ms o hasta respuesta |
 | Duración del trial (ITI incluido) | 1500 ms |
 | Variables de la tarea | RT en Go (ms), errores de comisión (%), errores de omisión (%) |
@@ -96,9 +109,12 @@ flowchart TD
 
     subgraph SE[EXPERIMENTAL]
         E[instrucciones_experimental]
-        E --> LE
-        subgraph LE["loop_experimental x 80"]
-            E1[estimulo] --> EITI[ITI]
+        E --> LB
+        subgraph LB["loop_bloques"]
+            direction TB
+            subgraph LE["loop_experimental / loop_condiciones"]
+                E1[estimulo] --> EITI[ITI]
+            end
         end
     end
 
@@ -109,7 +125,7 @@ flowchart TD
     A --> B
     C --> D
     D --> E
-    LE --> F
+    LB --> F
 
     style A    fill:#6BA3D6,stroke:#2E6DA4,color:#0D2E4A
     style F    fill:#E07B6A,stroke:#A83D2B,color:#3D0E07
@@ -126,6 +142,7 @@ flowchart TD
     style E1   fill:#5DCAA5,stroke:#0F6E56,color:#04342C
     style EITI fill:#C9EFE3,stroke:#0F6E56,color:#04342C
     style LE   fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+    style LB   fill:#D7F2EA,stroke:#0F6E56,color:#04342C
 
     style SB   fill:#EBF3FA,stroke:#2E6DA4,color:#0D2E4A
     style SP   fill:#F8F7FF,stroke:#534AB7,color:#26215C
