@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2026.1.3">
+<PsychoPy2experiment encoding="utf-8" version="2026.2.3">
   <Settings>
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
@@ -71,35 +71,33 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_instrucciones_practica" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="instrucciones_practica_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="media/instructions/2_instrucciones_practica.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_instrucciones_practica" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instrucciones_practica_txt" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="PRÁCTICA&amp;#10;&amp;#10;Recuerda:&amp;#10;&amp;#10;Círculo verde  →  Presiona la barra espaciadora&amp;#10;&amp;#10;Cuadrado rojo  →  No presiones ninguna tecla&amp;#10;&amp;#10;Recibirás retroalimentación después de cada ensayo.&amp;#10;&amp;#10;Presiona la barra espaciadora para comenzar.&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <KeyboardComponent name="key_resp_2" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -137,7 +135,7 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_estimulo_p" plugin="None">
+      <ImageComponent name="estimulo_p" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -150,7 +148,7 @@
         <Param val="$imagen_p" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_estimulo_p" valType="code" updates="None" name="name"/>
+        <Param val="estimulo_p" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
@@ -230,7 +228,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.07" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
         <Param val="text" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -265,35 +263,33 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_fin_practica" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="fin_practica_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="media/instructions/3_fin_practica.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_fin_practica" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="fin_practica_txt" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="La práctica ha terminado.&amp;#10;&amp;#10;Ahora tendrás un descanso.&amp;#10;&amp;#10;Después comenzarás la fase experimental, sin retroalimentación." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
     </Routine>
     <Routine name="descanso">
       <RoutineSettingsComponent name="descanso" plugin="None">
@@ -312,35 +308,33 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_descanso" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="descanso_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="media/instructions/4_descanso.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_descanso" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="descanso_txt" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="60" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="DESCANSO&amp;#10;&amp;#10;La tarea continuará automáticamente." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
     </Routine>
     <Routine name="instrucciones_experimental">
       <RoutineSettingsComponent name="instrucciones_experimental" plugin="None">
@@ -359,35 +353,33 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_instrucciones_experimental" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="instrucciones_experimental_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="media/instructions/5_instrucciones_experimental.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_instrucciones_experimental" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instrucciones_experimental_txt" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="BLOQUE EXPERIMENTAL&amp;#10;&amp;#10;Recuerda:&amp;#10;&amp;#10;Círculo verde  →  Presiona la barra espaciadora&amp;#10;&amp;#10;Cuadrado rojo  →  No presiones ninguna tecla&amp;#10;&amp;#10;Responde lo más rápido y con la mayor precisión posible.&amp;#10;&amp;#10;Presiona la barra espaciadora para comenzar." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <KeyboardComponent name="key_resp_3" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -425,7 +417,7 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_estimulo" plugin="None">
+      <ImageComponent name="estimulo" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -438,7 +430,7 @@
         <Param val="$imagen" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_estimulo" valType="code" updates="None" name="name"/>
+        <Param val="estimulo" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
@@ -456,7 +448,7 @@
       </ImageComponent>
       <KeyboardComponent name="key_resp_experimental" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="$tecla_correcta_p" valType="str" updates="constant" name="correctAns"/>
+        <Param val="$tecla_correcta" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
@@ -536,35 +528,33 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_fin_experimento" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="fin_experimento_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="media/instructions/6_fin_experimento.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_fin_experimento" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="fin_experimento_txt" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="La tarea ha finalizado.&amp;#10;&amp;#10;Gracias por tu participación." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
     </Routine>
     <Routine name="instrucciones">
       <RoutineSettingsComponent name="instrucciones" plugin="None">
@@ -583,35 +573,33 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="img_instrucciones" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="instrucciones_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="media/instructions/1_instrucciones.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="img_instrucciones" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instrucciones_txt" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="Bienvenido/a a esta tarea.&amp;#10;&amp;#10;En cada ensayo verás aparecer una figura en el centro de la pantalla.&amp;#10;&amp;#10;Círculo verde  →  Presiona la barra espaciadora lo más rápido posible&amp;#10;&amp;#10;Cuadrado rojo  →  No presiones ninguna tecla&amp;#10;&amp;#10;Primero realizarás una fase de práctica.&amp;#10;&amp;#10;Presiona la barra espaciadora para comenzar." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <KeyboardComponent name="key_resp" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -652,22 +640,11 @@
     <LoopTerminator name="loop_practica"/>
     <Routine name="fin_practica"/>
     <Routine name="descanso"/>
-    <LoopInitiator loopType="TrialHandler" name="loop_externo">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'bloque': 'conditions/condiciones_experimental.xlsx'}, {'bloque': 'conditions/condiciones_experimental_2.xlsx'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="conditions/bloques.xlsx" valType="file"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="loop_externo" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
     <Routine name="instrucciones_experimental"/>
     <LoopInitiator loopType="TrialHandler" name="loop_experimental">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'id': 1, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 2, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 3, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 4, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 5, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 6, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 7, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 8, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 9, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 10, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 11, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 12, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 13, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 14, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 15, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 16, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 17, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 18, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 19, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 20, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 21, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 22, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 23, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 24, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 25, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 26, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 27, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 28, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 29, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 30, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 31, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 32, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 33, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 34, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 35, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 36, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 37, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 38, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 39, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 40, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 41, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 42, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 43, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 44, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 45, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 46, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 47, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 48, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 49, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 50, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 51, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 52, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 53, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 54, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 55, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 56, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 57, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 58, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 59, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 60, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 61, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 62, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 63, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 64, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 65, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 66, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 67, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 68, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 69, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 70, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 71, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 72, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 73, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 74, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 75, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 76, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 77, 'imagen': 'media/stim/nogo.png', 'tecla_correcta': 'none', 'es_go': 0, 'tipo': 'nogo'}, {'id': 78, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 79, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}, {'id': 80, 'imagen': 'media/stim/go.png', 'tecla_correcta': 'space', 'es_go': 1, 'tipo': 'go'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="$bloque" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="conditions/condiciones_experimental.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
@@ -678,7 +655,6 @@
     <Routine name="estimulo_experimental"/>
     <Routine name="ITI"/>
     <LoopTerminator name="loop_experimental"/>
-    <LoopTerminator name="loop_externo"/>
     <Routine name="fin_experimento"/>
   </Flow>
 </PsychoPy2experiment>
