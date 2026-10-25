@@ -10,7 +10,9 @@
 
 Este repositorio contiene el **solucionario del Taller 4**, centrado en el diseño e implementación de una tarea Go/No-Go en PsychoPy Builder. El participante debe presionar la **barra espaciadora ante un círculo verde (Go)** y **no presionar ninguna tecla ante un cuadrado rojo (No-Go)**. La mayor frecuencia de ensayos Go favorece una tendencia a responder que debe inhibirse ante el estímulo No-Go.
 
-La tarea incluye una fase de práctica con feedback y una fase experimental sin feedback. El control inhibitorio se aborda a partir de Diamond (2013), y Wessel (2018) se utiliza como referencia metodológica. Los parámetros que se describen aquí corresponden a la adaptación didáctica del curso.
+La tarea incluye una fase de práctica con feedback y una fase experimental sin feedback. El control inhibitorio se aborda a partir de Diamond (2013), y Wessel (2018) se utiliza como referencia metodológica.
+
+Young et al. (2018) examinan cómo la proporción Go/No-Go y el intervalo entre ensayos influyen en los errores de comisión. Hasegawa et al. (2021) analizan cómo los intervalos entre estímulos afectan la interpretación de esos errores como indicador de inhibición de respuestas. Los parámetros que se describen aquí corresponden a la adaptación didáctica del curso.
 
 ### Secuencia del ensayo de práctica
 
@@ -195,9 +197,13 @@ Selecciona las columnas experimentales, sin el sufijo `_p` que identifica las co
 
 Diamond, A. (2013). Executive functions. *Annual Review of Psychology, 64*, 135–168. https://doi.org/10.1146/annurev-psych-113011-143750
 
+Hasegawa, A., Matsumoto, N., Yamashita, Y., Tanaka, K., Kawaguchi, J., & Yamamoto, T. (2021). Do shorter inter-stimulus intervals in the go/no-go task enable better assessment of response inhibition? *Scandinavian Journal of Psychology, 62*(2), 118–124. https://doi.org/10.1111/sjop.12679
+
 Peirce, J., Gray, J. R., Simpson, S., MacAskill, M., Höchenberger, R., Sogo, H., Kastman, E., & Lindeløv, J. K. (2019). PsychoPy2: Experiments in behavior made easy. *Behavior Research Methods, 51*(1), 195–203. https://doi.org/10.3758/s13428-018-01193-y
 
 Wessel, J. R. (2018). Prepotent motor activity and inhibitory control demands in different variants of the go/no-go paradigm. *Psychophysiology, 55*(3), e12871. https://doi.org/10.1111/psyp.12871
+
+Young, M. E., Sutherland, S. C., & McCoy, A. W. (2018). Optimal go/no-go ratios to maximize false alarms. *Behavior Research Methods, 50*(3), 1020–1029. https://doi.org/10.3758/s13428-017-0923-5
 
 ---
 
